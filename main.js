@@ -93,12 +93,14 @@ if ((userNumber1 % userNumber2 === 0) && (userNumber1 % userNumber3 === 0)) {
 
 //Задача №7 Кварталы
 
-let month = Number(prompt("Введите месяц в виде цифры"));
+let month = Number(prompt("Введите месяц в виде цифры до 12"))
+if (month>12){
+    console.log("Неверное число")
+} else{
+    let kvartal = (parseInt((month + 2) / 3));
 
-let kvartal = (parseInt((month + 2) / 3));
-
-console.log(kvartal + " квартал");
-
+    console.log(kvartal + " квартал");
+}
 
 
 
