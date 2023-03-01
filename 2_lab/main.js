@@ -37,9 +37,27 @@ function objectFields() {
     console.log(`Студент ${student.name} ${student.surname} учится в ${student.group} группе`);
 }
 
+function randomNumber(min = (-64), max = 64) {
+    if (isNaN(Number(min)) || (isNaN(Number(max))))
+        return false;
 
+    const random = Math.random() * (max - min) + min;
+    return Number(random.toFixed())
 
+}
 
+function sampleArray(incomeArray = [1,2,3,4], count = 2) {
+    const finalArray = [];
+
+    console.log("входной массив", incomeArray, "кол-во:", count)
+
+    for (let i=0; i<count; i++) {
+        const number = randomNumber(0, incomeArray.length-1);
+        finalArray.push(incomeArray[number]);
+    }
+
+    return finalArray;
+}
 
 
 
@@ -60,4 +78,10 @@ switch (numberEx){
     case 3:
         console.log("Задача №3 Работа с объектом");
         objectFields();
+    case 4:
+        console.log("Задача №4 Случайные числа");
+        console.log(randomNumber());
+    case 5:
+        console.log("Задача №5 Значения из массива");
+        console.log(sampleArray());
 }
