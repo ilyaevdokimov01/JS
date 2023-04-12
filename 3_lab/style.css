@@ -1,4 +1,4 @@
-/* Modal */
+/* Модалка */
 .modal {
 	display: none;
 	position: fixed;
@@ -33,7 +33,7 @@
 	cursor: pointer;
 }
 
-/* Form */
+/* Форма */
 form {
 	display: flex;
 	flex-direction: column;
