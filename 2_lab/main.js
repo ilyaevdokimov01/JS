@@ -85,3 +85,4 @@ switch (numberEx){
         console.log("Задача №5 Значения из массива");
         console.log(sampleArray());
 }
+

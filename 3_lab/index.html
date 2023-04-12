@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Modal Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<button id="register-button">Register</button>
+	</header>
+
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<form id="register-form">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" minlength="6" required>
+				<div class="error-message"></div>
+				<div id="show-password">Show password</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
