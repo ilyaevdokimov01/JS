@@ -75,14 +75,18 @@ switch (numberEx){
     case 2:
         console.log("Задача №2 Абсолютное значение");
         console.log(absValue(-35));
+        break;
     case 3:
         console.log("Задача №3 Работа с объектом");
         objectFields();
+        break;
     case 4:
         console.log("Задача №4 Случайные числа");
         console.log(randomNumber());
+        break;
     case 5:
         console.log("Задача №5 Значения из массива");
         console.log(sampleArray());
+        break;
 }
 
