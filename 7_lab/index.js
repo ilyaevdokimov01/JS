@@ -8,9 +8,16 @@ const app = express();
 app.use(morgan("dev"));
 app.use(helmet());
 
+app.use(express.json());
+
 app.use(express.static(path.resolve(__dirname, "public/")))
 app.use("/api", api);
 
-app.listen(8000, ()=>{
-    console.log("Server started");
+app.use( (req, res) => {
+    res.status(400).send();
+})
+
+const port = 9000;
+app.listen(port, ()=>{
+    console.log(`Server started http://localhost:${port}`);
 })
