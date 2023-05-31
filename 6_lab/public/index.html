@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./awsm.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_6_Evdokimov</title>
+</head>
+<body>
+    <div>
+        <h2>v1</h2>
+        <p>Endpoints</p>
+        <ul>
+            <li><a href="/api">"/api/"</a></li>
+            <li><a href="/api/comments/">"/api/comments/"</a></li>
+            <li><a href="/api/stats">"/api/stats"</a></li>
+        </ul>
+
+        <h3>"/api/"</h3>
+        <p>Methods: GET</p>
+        <p>Response: text/plain</p>
+
+        <h3>"/api/comments/"</h3>
+        <p>Methods: GET, POST</p>
+        <p>POST Request body:</p>
+        <ul>
+            <li>"subject": string</li>
+            <li>"day": string</li>
+        </ul>
+        <p>POST Response: JSON</p>
+        <p>GET Response: JSON</p>
+
+        <h3>"/api/stats/"</h3>
+        <p>Methods: GET</p>
+        <p>GET Response: JSON</p>
+    </div>
+
+</body>
+</html>
