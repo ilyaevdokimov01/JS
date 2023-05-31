@@ -55,26 +55,8 @@ function getRequestDataByUserAgent(requestData, userAgentName) {
     return keys.indexOf(userAgentName);
 }
 
-
-
-function checkAuth(req, res, next) {
-    const params = req.query;
-
-    if (!params.apikey || params.apikey !== cfg.apiKey) {
-        res.status(401).send("Не передан Api ключ");
-    }
-    else {
-        next();
-    }
-}
-
 function addcomment(req, res, next) {
     const data = req.body;
-
-    if (!data.subject || !data.day) {
-        return res.status(400).send("Не хватает данных");
-    }
-
     comments.push(data);
     res.json(comments);
 }
@@ -86,8 +68,6 @@ function getcomments(req, res, next) {
 function getstats(req, res, next) {
     res.json(requests);
 }
-
-router.use("/", checkAuth);
 
 router.use("/", (req, res, next) => {
     const userAgent = req.headers["user-agent"];
