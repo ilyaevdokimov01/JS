@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mongodb": "^6.1.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1"
+  },
+  "name": "6_lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
